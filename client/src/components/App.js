@@ -2,6 +2,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from 'react-query';
+import PatientPage from './PatientPage';
 import PatientsListPage from './PatientsListPage';
 import Nav from './Nav';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -18,6 +19,7 @@ function App() {
           <Nav />
           <Routes>
             <Route path='/' element={<PatientsListPage />} />
+            <Route path='/patients/:id' element={<PatientPage />} />
           </Routes>
         </BrowserRouter>
       </Container>
@@ -26,6 +28,3 @@ function App() {
 }
 
 export default App;
-
-
-

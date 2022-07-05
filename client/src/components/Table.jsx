@@ -3,6 +3,9 @@ Table.Body = ({ children, className }) => <tbody className={className}>{children
 Table.DataItem = ({ children }) => {
   return <td className='px-6 py-4 font-medium whitespace-nowrap'>{children}</td>
 }
+Table.BoldDataItem = ({ children }) => {
+  return <td className='px-6 py-4 capitalize font-bold font-medium whitespace-nowrap'>{children}</td>
+}
 Table.HeadItem = ({ children }) => {
   return <td className='px-6 py-3'>{children}</td>
 }
